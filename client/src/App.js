@@ -9,7 +9,7 @@ import store from './Store/index';
 
 import Home from './Pages/Home-page';
 import Detail from './Pages/Detail-page';
-import Search from './Pages/Search-page'
+import Search from './Pages/Search-page';
 
 const routes = [
   {
@@ -23,7 +23,7 @@ const routes = [
     children: <Detail />
   },
   {
-    path: '/search',
+    path: '/search/:keyword',
     exact: true,
     children: <Search />
   }
