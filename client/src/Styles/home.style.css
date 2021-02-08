@@ -93,6 +93,15 @@ h1.database{
   align-items: center;
 }
 
+.result-box{
+  width: 100%;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   -webkit-user-drag: none;
   -moz-user-drag: none;

@@ -9,7 +9,7 @@ import Header from '../Components/Header-component';
 function Home(){
   const dispatch = useDispatch();
   const history = useHistory();
-  const [keyword,setKeyword] = useState('')
+  const [keyword,setKeyword] = useState('undefined')
 
   useEffect(()=>{
     dispatch(getData())
@@ -39,12 +39,14 @@ function Home(){
           />
           <i 
           onClick={()=>handleSearch(keyword)}
-          className="fa fa-search"></i>
+          className="fa fa-search"
+          data-testid="search"
+          ></i>
         </div>
         <div className='container'>
           {
             listMovie.map((element,index)=>{
-              return <Card key={index} data={element}/>
+              return <Card key={index} data={element} data-testid="card"/>
             })
           }
         </div>

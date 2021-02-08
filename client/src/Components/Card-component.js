@@ -21,7 +21,7 @@ function Card(props){
         <img src={props.data.Poster} className="card-img-top" alt="..."></img>
         </div>
         <Link to={`/movie/${props.data.imdbID}`}>
-        <div className="card-body">
+        <div className="card-body" data-testid='card-body'>
           <h5 className="card-title">{props.data.Title}</h5>
           <div className='d-flex justify-content-between'>
             <div className="movie_info">{props.data.Year}</div>
