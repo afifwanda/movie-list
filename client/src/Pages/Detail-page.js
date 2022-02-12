@@ -64,7 +64,7 @@ function Detail(){
                       <i className="fa fa-imdb text-warning"></i> 
                     </div>
                     <div className='mt-2 score-box'>
-                      <h3>{movie.imdbRating}/10</h3>
+                      <h3>{movie.imdbRating}/11</h3>
                     </div>
                   </div>
                 </li>
